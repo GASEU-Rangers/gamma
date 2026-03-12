@@ -3,20 +3,11 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-
-background:
-linear-gradient(
-to bottom,
-#ffffff 0%,
-#ffffff 55%,
-#f4f4f4 100%
-);
+background:linear-gradient(to bottom,#ffffff 60%,#f2f2f2);
 }
 
 
-/* =========================
-   메뉴바
-========================= */
+/* 메뉴바 */
 
 header{
 background:black;
@@ -25,8 +16,6 @@ align-items:center;
 padding:20px 40px;
 }
 
-/* 로고 */
-
 .logo{
 color:white;
 text-decoration:none;
@@ -34,12 +23,9 @@ font-weight:bold;
 margin-right:auto;
 }
 
-/* 메뉴 */
-
 .menu{
 display:flex;
 gap:25px;
-margin-left:auto;
 }
 
 .menu a{
@@ -53,23 +39,8 @@ color:#ff2a8a;
 font-weight:bold;
 }
 
-/* 아이콘 */
 
-.icons{
-display:flex;
-gap:15px;
-margin-left:30px;
-}
-
-.icons a{
-color:white;
-text-decoration:none;
-}
-
-
-/* =========================
-   메인 레이아웃
-========================= */
+/* 메인 */
 
 .main{
 display:flex;
@@ -77,22 +48,16 @@ justify-content:space-between;
 padding:120px;
 }
 
-/* 왼쪽 영역 */
-
 .left{
 max-width:400px;
 }
-
-/* 오른쪽 캐릭터 */
 
 .right{
 font-size:28px;
 }
 
 
-/* =========================
-   버튼
-========================= */
+/* 버튼 */
 
 .button{
 background:black;
@@ -101,16 +66,15 @@ padding:15px 30px;
 text-decoration:none;
 display:inline-block;
 margin-top:20px;
+transition:0.3s;
 }
 
 .button:hover{
-background:#333;
+background:#444;
 }
 
 
-/* =========================
-   footer
-========================= */
+/* footer */
 
 footer{
 background:black;
@@ -121,30 +85,26 @@ margin-top:120px;
 }
 
 
-/* =========================
-   페이지 공통 HERO
-========================= */
+/* 페이지 제목 */
 
 .page-hero{
 text-align:center;
-padding:120px 20px 80px 20px;
+padding:120px 20px 80px;
 }
 
 .page-hero h1{
 font-size:56px;
-color:#e05a73;
+color:black;
 margin-bottom:10px;
 letter-spacing:2px;
 }
 
 .page-hero p{
 font-size:22px;
-color:#e05a73;
-letter-spacing:2px;
+color:black;
 margin:0;
+letter-spacing:2px;
 }
-
-/* 제목 아래 선 */
 
 .page-hero::after{
 content:"";
@@ -152,13 +112,11 @@ display:block;
 width:120px;
 height:2px;
 background:black;
-margin:25px auto 0 auto;
+margin:25px auto 0;
 }
 
 
-/* =========================
-   설명 영역
-========================= */
+/* 내용 */
 
 .page-content{
 background:#eeeeee;
@@ -169,14 +127,20 @@ padding:80px 20px;
 max-width:900px;
 margin:auto;
 font-size:17px;
-line-height:1.9;
+line-height:1.8;
 color:#444;
 }
 
-/* 첫 문단 강조 */
 
-.highlight{
-color:#e05a73;
-font-weight:600;
-margin-bottom:30px;
+/* 애니메이션 */
+
+.fade{
+opacity:0;
+transform:translateY(-40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
 }
