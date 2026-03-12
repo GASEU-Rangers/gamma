@@ -1,3 +1,7 @@
+const isHome = window.location.pathname.includes("index")
+
+if(isHome){
+
 window.onload = function(){
 
 const items = document.querySelectorAll(".fade")
@@ -9,5 +13,7 @@ item.classList.add("show")
 },i*200)
 
 })
+
+}
 
 }
