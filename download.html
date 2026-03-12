@@ -4,9 +4,64 @@
 <head>
 
 <meta charset="UTF-8">
-<title>DOWNLOAD</title>
+<title>UTAU DOWNLOAD</title>
 
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* 다운로드 페이지 전용 */
+
+.download-main{
+display:flex;
+padding:120px;
+min-height:500px;
+}
+
+/* 왼쪽 */
+
+.download-left{
+width:50%;
+}
+
+.download-logo img{
+width:300px;
+margin-bottom:40px;
+}
+
+/* 오른쪽 캐릭터 */
+
+.download-right{
+width:50%;
+position:fixed;
+right:80px;
+top:200px;
+}
+
+.download-right img{
+height:500px;
+}
+
+/* SONG 영역 */
+
+.song{
+margin-top:600px;
+text-align:center;
+}
+
+.song h2{
+font-size:40px;
+letter-spacing:3px;
+margin-bottom:30px;
+}
+
+.song iframe{
+width:700px;
+height:400px;
+border:none;
+}
+
+</style>
 
 </head>
 
@@ -14,39 +69,76 @@
 
 <header>
 
-<a href="index.html" class="logo">LOGO</a>
+<a href="index.html" class="logo">
+<img src="img/title_logo.png">
+</a>
 
-<div class="menu">
+<nav class="menu">
 
 <a href="download.html" class="download">UTAU 다운로드</a>
 <a href="logo.html">일러스트 로고</a>
 <a href="character.html">무제란?</a>
 <a href="guideline.html">가이드라인</a>
 
+</nav>
+
+<div class="icons">
+
+<a href="email.html">
+<img src="img/email.png">
+</a>
+
+<a href="https://twitter.com">
+<img src="img/twitter.png">
+</a>
+
 </div>
 
 </header>
 
 
-<section class="page-hero fade">
+<!-- 다운로드 영역 -->
 
-<h1>UTAU 다운로드</h1>
-<p>DOWNLOAD</p>
+<section class="download-main">
 
-</section>
+<div class="download-left">
+
+<div class="download-logo">
+<img src="img/title_logo.png">
+</div>
+
+<a class="button">
+UTAU 다운로드 받기
+</a>
+
+</div>
 
 
-<section class="page-content">
+<div class="download-right">
 
-<div class="content-container fade">
-
-<a class="button">다운로드 받기</a>
+<img src="img/character.png">
 
 </div>
 
 </section>
 
-<script src="js/main.js"></script>
+
+<!-- SONG 영역 -->
+
+<section class="song">
+
+<h2>SONG</h2>
+
+<iframe src="https://www.youtube.com/embed/VIDEOID"></iframe>
+
+</section>
+
+
+<footer>
+
+<img src="img/title_logo.png">
+
+</footer>
 
 </body>
 
