@@ -1,281 +1,175 @@
-/* =====================
-기본
-===================== */
-
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#ffffff;
+background:white;
 }
 
-
-/* =====================
-헤더
-===================== */
+/* HEADER */
 
 header{
-
 background:black;
-color:white;
-
 display:flex;
 align-items:center;
-
 padding:20px 40px;
-
 }
 
 .logo img{
 height:32px;
 }
 
-/* 메뉴 */
-
 .menu{
-
 display:flex;
 gap:30px;
-
 margin-left:auto;
-
 }
 
 .menu a{
-
 color:white;
 text-decoration:none;
 font-size:16px;
-
 }
 
 .download{
-
 color:#ff2a8a;
 font-weight:bold;
-
 }
 
-/* 아이콘 */
-
 .icons{
-
 display:flex;
 gap:15px;
-margin-left:25px;
-
+margin-left:20px;
 }
 
 .icons img{
-
 height:22px;
-
 }
 
-
-/* =====================
-메인
-===================== */
+/* MAIN */
 
 .main{
-
 max-width:1200px;
 margin:auto;
-
 display:flex;
 justify-content:space-between;
-
 padding:80px 20px;
-
 }
 
 .left{
-
-width:50%;
-
+width:45%;
 }
 
 .right{
-
-width:50%;
+width:45%;
 text-align:right;
-
 }
 
+.right img{
+max-width:400px;
+}
 
-/* 버튼 */
+/* BUTTON */
 
 .button{
-
 background:black;
 color:white;
-
 padding:15px 30px;
-
 text-decoration:none;
-
 display:inline-block;
-
 margin-top:20px;
-
 }
 
 .button:hover{
-
 background:#444;
-
 }
 
-
-/* =====================
-페이지 제목
-===================== */
+/* PAGE TITLE */
 
 .page-hero{
-
 text-align:center;
 padding:80px 20px;
-
 }
 
 .page-hero h1{
-
 font-size:48px;
 color:black;
-
 margin-bottom:10px;
-
-}
-
-.page-hero p{
-
-font-size:20px;
-margin:0;
-
 }
 
 .page-hero::after{
-
 content:"";
-
 display:block;
-
 width:120px;
 height:2px;
-
 background:black;
-
 margin:20px auto 0;
-
 }
 
-
-/* =====================
-내용 영역
-===================== */
+/* CONTENT */
 
 .page-content{
-
 max-width:900px;
 margin:auto;
-
 padding:40px 20px;
-
 }
 
-
-/* =====================
-다운로드 페이지
-===================== */
+/* DOWNLOAD PAGE */
 
 .download-main{
-
 max-width:1200px;
 margin:auto;
-
 display:flex;
 justify-content:space-between;
-
 padding:80px 20px;
-
 }
 
 .download-left{
-
 width:45%;
-
 }
 
 .download-right{
-
 width:45%;
 text-align:right;
-
 }
 
 .download-right img{
-
 height:450px;
-
 }
-
 
 /* SONG */
 
 .song{
-
 text-align:center;
 padding:80px 20px;
-
 }
 
 .song h2{
-
 font-size:36px;
 margin-bottom:30px;
-
 }
 
-
-/* =====================
-애니메이션
-===================== */
+/* ANIMATION (HOME ONLY) */
 
 .fade{
-
 opacity:0;
 transform:translateY(-40px);
 transition:1s;
-
 }
 
 .fade.show{
-
 opacity:1;
 transform:translateY(0);
-
 }
 
-
-/* =====================
-푸터
-===================== */
+/* FOOTER */
 
 footer{
-
 background:black;
-
 padding:40px 0;
-
 display:flex;
 justify-content:center;
-align-items:center;
-
 margin-top:80px;
-
 }
 
 footer img{
-
 height:35px;
-
 }
