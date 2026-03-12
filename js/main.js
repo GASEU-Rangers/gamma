@@ -1,8 +1,6 @@
-const isHome = window.location.pathname.includes("index")
-
-if(isHome){
-
 window.onload = function(){
+
+if(document.body.classList.contains("home")){
 
 const items = document.querySelectorAll(".fade")
 
