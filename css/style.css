@@ -1,4 +1,129 @@
-/* 페이지 공통 HERO */
+/* 기본 */
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+
+background:
+linear-gradient(
+to bottom,
+#ffffff 0%,
+#ffffff 55%,
+#f4f4f4 100%
+);
+}
+
+
+/* =========================
+   메뉴바
+========================= */
+
+header{
+background:black;
+display:flex;
+align-items:center;
+padding:20px 40px;
+}
+
+/* 로고 */
+
+.logo{
+color:white;
+text-decoration:none;
+font-weight:bold;
+margin-right:auto;
+}
+
+/* 메뉴 */
+
+.menu{
+display:flex;
+gap:25px;
+margin-left:auto;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.menu .download{
+color:#ff2a8a;
+font-weight:bold;
+}
+
+/* 아이콘 */
+
+.icons{
+display:flex;
+gap:15px;
+margin-left:30px;
+}
+
+.icons a{
+color:white;
+text-decoration:none;
+}
+
+
+/* =========================
+   메인 레이아웃
+========================= */
+
+.main{
+display:flex;
+justify-content:space-between;
+padding:120px;
+}
+
+/* 왼쪽 영역 */
+
+.left{
+max-width:400px;
+}
+
+/* 오른쪽 캐릭터 */
+
+.right{
+font-size:28px;
+}
+
+
+/* =========================
+   버튼
+========================= */
+
+.button{
+background:black;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+}
+
+.button:hover{
+background:#333;
+}
+
+
+/* =========================
+   footer
+========================= */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:120px;
+}
+
+
+/* =========================
+   페이지 공통 HERO
+========================= */
 
 .page-hero{
 text-align:center;
@@ -30,7 +155,10 @@ background:black;
 margin:25px auto 0 auto;
 }
 
-/* 설명 영역 */
+
+/* =========================
+   설명 영역
+========================= */
 
 .page-content{
 background:#eeeeee;
