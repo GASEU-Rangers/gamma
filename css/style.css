@@ -1,207 +1,39 @@
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:white;
-}
+/* 페이지 상단 큰 제목 */
 
-/* 메뉴 */
-
-header{
-background:black;
-height:60px;
-display:flex;
-align-items:center;
-padding:0 40px;
-}
-
-/* 로고 */
-
-.logo{
-margin-right:auto;
-}
-
-/* 메뉴 */
-
-.menu{
-display:flex;
-gap:30px;
-margin-left:auto;
-}
-
-.menu a{
-color:white;
-text-decoration:none;
-font-size:16px;
-transition:all 0.25s ease;
-}
-
-.menu a:hover{
-opacity:0.6;
-}
-
-.menu .download{
-color:#ff2a8a;
-font-weight:bold;
-}
-
-/* 아이콘 */
-
-.icons{
-display:flex;
-align-items:center;
-margin-left:20px;
-}
-
-.icons img{
-height:22px;
-margin-left:15px;
-transition:transform 0.25s ease, opacity 0.25s ease;
-}
-
-.icons img:hover{
-opacity:0.7;
-transform:translateY(-2px);
-}
-
-/* 메인 레이아웃 */
-
-.main{
-display:flex;
-justify-content:space-between;
-padding:120px;
-min-height:600px;
-}
-
-.left{
-width:400px;
-}
-
-.left img{
-width:280px;
-}
-
-/* 캐릭터 */
-
-.right{
-position:fixed;
-right:100px;
-bottom:0;
-}
-
-.right img{
-height:720px;
-filter:drop-shadow(0 20px 30px rgba(0,0,0,0.2));
-}
-
-/* 버튼 */
-
-.button{
-background:black;
-color:white;
-padding:15px 30px;
-display:inline-block;
-margin-top:20px;
-text-decoration:none;
-transition:all 0.25s ease;
-}
-
-.button:hover{
-background:#222;
-transform:translateY(-2px);
-}
-
-.button:active{
-background:gray;
-}
-
-/* footer */
-
-footer{
-background:black;
+.page-hero{
+padding:140px 0 80px 0;
 text-align:center;
-padding:25px;
 }
 
-footer img{
-height:35px;
+.page-hero h1{
+font-size:64px;
+font-weight:900;
+letter-spacing:4px;
+margin:0;
+
+opacity:0;
+transform:translateY(-60px);
+animation:titleDrop 1s ease forwards;
 }
 
-/* 인덱스 */
+/* 제목 아래 얇은 선 */
 
-.index{
-margin-bottom:30px;
-}
-
-.index button{
+.page-hero::after{
+content:"";
+display:block;
+width:120px;
+height:2px;
 background:black;
-color:white;
-padding:12px 18px;
-border:none;
-margin-right:10px;
-cursor:pointer;
-transition:0.25s;
+margin:20px auto 0 auto;
 }
 
-.index button:hover{
-background:#333;
-}
+/* 제목 등장 애니메이션 */
 
-/* 토글 */
-
-.toggle{
-background:black;
-color:white;
-padding:10px;
-margin-top:10px;
-cursor:pointer;
-}
-
-.content{
-display:none;
-padding:10px;
-border:1px solid #ddd;
-}
-
-/* 다운로드 블록 */
-
-.download-block{
-display:flex;
-align-items:center;
-gap:40px;
-margin-bottom:40px;
-}
-
-.download-block img{
-width:300px;
-}
-
-/* 등장 애니메이션 */
-
-.fade-in-down{
-opacity:0;
-transform:translateY(-80px);
-animation:fadeInDown 1s ease forwards;
-}
-
-.fade-in-down-delay{
-opacity:0;
-transform:translateY(-80px);
-animation:fadeInDown 1s ease forwards;
-animation-delay:0.4s;
-}
-
-.fade-in-down-character{
-opacity:0;
-transform:translateY(-120px);
-animation:fadeInDown 1.2s ease forwards;
-animation-delay:0.7s;
-}
-
-@keyframes fadeInDown{
+@keyframes titleDrop{
 
 from{
 opacity:0;
-transform:translateY(-80px);
+transform:translateY(-60px);
 }
 
 to{
