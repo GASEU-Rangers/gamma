@@ -1,0 +1,157 @@
+body{
+margin:0;
+font-family:Arial;
+background:white;
+}
+
+/* 상단 메뉴 */
+
+header{
+background:black;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+font-size:16px;
+text-decoration:none;
+}
+
+.menu .download{
+color:#ff2a8a;
+font-weight:bold;
+}
+
+.icons img{
+height:22px;
+margin-left:15px;
+}
+
+/* 메인 구조 */
+
+.main{
+display:flex;
+justify-content:space-between;
+padding:120px;
+min-height:600px;
+}
+
+.left{
+width:400px;
+}
+
+.left img{
+width:280px;
+}
+
+.right{
+position:fixed;
+right:100px;
+bottom:0;
+}
+
+.right img{
+height:720px;
+}
+
+/* 버튼 */
+
+.button{
+background:black;
+color:white;
+padding:15px 30px;
+display:inline-block;
+margin-top:20px;
+text-decoration:none;
+}
+
+.button:active{
+background:gray;
+}
+
+/* footer */
+
+footer{
+background:black;
+text-align:center;
+padding:25px;
+}
+
+footer img{
+height:35px;
+}
+
+/* 인덱스 */
+
+.index button{
+background:black;
+color:white;
+padding:10px 15px;
+border:none;
+margin-right:10px;
+}
+
+.index button:active{
+background:gray;
+}
+
+/* 토글 */
+
+.toggle{
+background:black;
+color:white;
+padding:10px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.content{
+display:none;
+padding:10px;
+border:1px solid #ddd;
+}
+
+/* 등장 애니메이션 */
+
+.fade-in-down{
+opacity:0;
+transform:translateY(-80px);
+animation:fadeInDown 1s ease forwards;
+}
+
+.fade-in-down-delay{
+opacity:0;
+transform:translateY(-80px);
+animation:fadeInDown 1s ease forwards;
+animation-delay:0.4s;
+}
+
+.fade-in-down-character{
+opacity:0;
+transform:translateY(-120px);
+animation:fadeInDown 1.2s ease forwards;
+animation-delay:0.7s;
+}
+
+@keyframes fadeInDown{
+
+from{
+opacity:0;
+transform:translateY(-80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
