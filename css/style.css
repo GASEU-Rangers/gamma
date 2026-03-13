@@ -10,7 +10,7 @@ header{
 background:black;
 display:flex;
 align-items:center;
-padding:20px 40px;
+padding:10px 40px;
 }
 
 .logo img{
@@ -176,5 +176,5 @@ margin-top:80px;
 }
 
 footer img{
-height:65px;
+height:80px;
 }
