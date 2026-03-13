@@ -44,18 +44,23 @@ margin-left:20px;
 height:22px;
 }
 
-/* MAIN */
+/* MAIN (HOME) */
 
 .main{
 max-width:1200px;
 margin:auto;
 display:flex;
 justify-content:space-between;
-padding:80px 20px;
+align-items:center;
+padding:100px 20px;
 }
 
 .left{
 width:45%;
+}
+
+.left img{
+width:450px;
 }
 
 .right{
@@ -64,22 +69,25 @@ text-align:right;
 }
 
 .right img{
-max-width:400px;
+max-width:600px;
 }
 
 /* BUTTON */
 
 .button{
-background:black;
+background:#ff2a8a;
 color:white;
-padding:15px 30px;
+padding:16px 32px;
 text-decoration:none;
 display:inline-block;
-margin-top:20px;
+margin-top:25px;
+border-radius:30px;
+transition:0.2s;
 }
 
 .button:hover{
-background:#444;
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* PAGE TITLE */
@@ -112,57 +120,18 @@ margin:auto;
 padding:40px 20px;
 }
 
-/* DOWNLOAD PAGE */
-
-.download-main{
-max-width:1200px;
-margin:auto;
-padding:80px 20px;
-position:relative;
-}
-
-/* 왼쪽 콘텐츠 */
-
-.download-left{
-width:600px;
-}
-
-/* 오른쪽 캐릭터 고정 */
-
-.download-right{
-position:fixed;
-right:80px;
-top:150px;
-}
-
-.download-right img{
-height:500px;
-}
-
 /* SONG */
 
 .song{
-width:600px;
-margin-left:calc(50% - 600px);
+max-width:700px;
+margin:auto;
 padding:80px 20px;
+text-align:center;
 }
 
 .song h2{
 font-size:36px;
 margin-bottom:30px;
-}
-
-/* ANIMATION */
-
-.fade{
-opacity:0;
-transform:translateY(-40px);
-transition:1s;
-}
-
-.fade.show{
-opacity:1;
-transform:translateY(0);
 }
 
 /* FOOTER */
@@ -179,19 +148,19 @@ footer img{
 height:80px;
 }
 
-/* SYNTHV STYLE SECTION */
+/* SYNTHV STYLE DOWNLOAD SECTION */
 
 .sv-section{
 
 position:relative;
-height:700px;
+min-height:650px;
 max-width:1200px;
 margin:100px auto;
 padding:0 20px;
 
 }
 
-/* 텍스트 */
+/* 텍스트 영역 */
 
 .sv-text{
 
@@ -221,6 +190,14 @@ text-decoration:none;
 border-radius:30px;
 margin-right:10px;
 margin-top:10px;
+transition:0.2s;
+
+}
+
+.sv-button:hover{
+
+transform:translateY(-2px);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 
 }
 
@@ -235,13 +212,27 @@ background:black;
 .sv-character{
 
 position:absolute;
-right:0;
+right:40px;
 bottom:0;
 
 }
 
 .sv-character img{
 
-height:70vh;
+height:60vh;
+max-height:500px;
 
+}
+
+/* ANIMATION */
+
+.fade{
+opacity:0;
+transform:translateY(-40px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
 }
